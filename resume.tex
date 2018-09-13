@@ -1,4 +1,42 @@
 \documentclass{article}
+\setlength{\parindent}{0pt}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{changepage}
+\usepackage{array}
+%\newcolumntype{L}[1]{w{l}{#1}}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
+
 \begin{document}
+\begin{table}[t]
+  \begin{tabular}[t]{l}
+  Toronto, Ontario \\
+  Canada
+  \end{tabular}\hfill
+  \begin{tabular}[t]{c}
+    Farhan Samir
+  \end{tabular}\hfill
+  \begin{tabular}[t]{r}
+  647 291-0185\\
+  f.samir@mail.utoronto.ca
+  \end{tabular}
+\end{table}
+
+\begin{tabular}{L{4cm} L{5cm} R{\dimexpr\textwidth-9cm-36pt}}
+%\begin{tabular}{l l l}
+  \textbf{education} & \textbf{University of Toronto}\hfill & \textbf{2013-2018} \\
+   & Honours Bachelor of Science & \\
+   & GPA 3.59/4.0 & \\
+\end{tabular}
+\newline
+\vspace*{1cm}
+
+\begin{tabular}{L{4cm} L{5cm} R{\dimexpr\textwidth-9cm-36pt}}
+  \textbf{experience} & \textbf{University of Toronto}\hfill & \textbf{2013-2018} \\
+   & Honours Bachelor of Science & \\
+   & GPA 3.59/4.0 & \\
+\end{tabular}
+
 
 \end{document}
