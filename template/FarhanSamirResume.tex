@@ -1,0 +1,177 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://sourabhbajaj.com/}{\Large Farhan Samir}} & Email : \href{mailto:f.samir@mail.utoronto.ca}{f.samir@mail.utoronto.ca}\\
+   & Mobile : 647 291-0185 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Toronto}{Toronto, Ontario}
+      {Honours Bachelor of Science in Computer Science;  GPA: 3.59}{Sep. 2013 -- Aug. 2018}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Princess Margaret Cancer Centre}{Toronto, Ontario}
+      {Software Developer}{Summer 2017}
+      \resumeItemListStart
+        \item Developed tool for tracking displacement of regions-of-interest in a patient's body during radiation
+        therapy
+        \item Connected .NET project to radiation treatment tracking software to automate updates to patient's
+        treatment plan
+        \item Refactored C\# codebase to support dependency injection and subsequently ease the writing of 
+        automated tests 
+        \item Reduced duration of end-to-end testing by several minutes through a refactoring of old project
+        architecture 
+        \item Created front-end component with Angular framework to view tracking results in an elegant format
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Environment Canada}{Toronto, Ontario}
+      {Student Software Developer}{May 2015 -- Sep. 2016}
+      \resumeItemListStart
+        \item Learned architecture of two-decade old codebase and completed 50+ bugfixes
+        \item Discovered and employed GUI testing 
+        library to automate GUI tests 
+        \item Adhered to system architecture standards that
+        were in place when writing new Java classes to ensure maintenance of standards and consistency
+        \item Developed novel technique for obtaining
+        pinpoint accuracy of a glyph on a map
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {University of Toronto}{Toronto, Ontario}
+      {Teaching Assistant}{Winter 2016, Winter 2017, Fall 2017, Winter 2018}
+      \resumeItemListStart
+        \item Designed and followed detailed
+        lesson-plan to orchestrate weekly 2-hour tutorial
+        of 30+ students
+        \item Employed the peer-instruction teaching method where live-coding sessions were driven mostly
+        by students
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+%\section{Projects}
+ % \resumeSubHeadingListStart
+%    \resumeSubItem{QuantSoftware Toolkit}
+%      {Open source python library for financial data analysis and machine learning for finance.}
+%    \resumeSubItem{Github Visualization}
+%      {Data Visualization of Git Log data using D3 to analyze project trends over time.}
+%    \resumeSubItem{Recommendation System}
+%      {Music and Movie recommender systems using collaborative filtering on public datasets.}
+%    \resumeSubItem{Mac Setup}
+ %     {Book that gives step by step instructions on setting up developer environment on Mac OS.}
+%  \resumeSubHeadingListEnd
+
+
+%---------EXTRACURRICULARS-------------
+\section{Extracurriculars}
+\resumeSubHeadingListStart
+    \resumeSubheading{Second-Year Learning Community (University of Toronto)}{Toronto, Ontario}{Lead Peer Mentor}{Sep. 2017 -- Apr. 2018}
+    \resumeItemListStart
+        \item Designed and orchestrated new activity plans biweekly for 15-20 second year computer science students
+        \item Planned tours of industry offices 
+        \item Hosted and conducted interview panels consisting of top researchers at the University of Toronto as well as senior professionals from computer science industry 
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+  \resumeSubHeadingListStart
+    \item
+      \textbf{Languages}
+      \resumeItemListStart
+        \resumeItem{Java}{Used extensively during 16-month internship at Environment Canada}
+        \resumeItem{Python}{Used ubiquitously in undergraduate studies}
+        \resumeItem{C\#}{Used extensively during internship at Princess Margaret Cancer Centre}
+        \resumeItem{C}{Used extensively during course in Advanced Operating Systems}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd 
+  
+
+
+%-------------------------------------------
+\end{document}
